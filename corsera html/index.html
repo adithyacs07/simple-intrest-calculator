@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="work.js" defer></script>
   </head>
   <body>
     <h1>Simple Intrest Calcuator</h1>
-    <div>
+    <div class="container">
       <label for="amount">Amount</label>
       <input type="text" name="amount" id="amount" />
       <br />
@@ -20,6 +21,7 @@
         value="15"
         min="0"
         max="50"
+        id="intrest-rate"
         oninput="this.nextElementSibling.value = this.value"
       />
       <output>15</output>
@@ -37,8 +39,9 @@
       </select>
       <br />
       <br />
-      <button type="button">Compute Intrest</button>
+      <button type="button" id="calculate">Compute Intrest</button>
       <br /><br />
+      <div id="result"></div>
       <p>&copy;Everyone can get rich</p>
       <p>This calculator belongs to Adithya Nayak</p>
     </div>
